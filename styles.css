@@ -29,10 +29,16 @@ body {
 
 .form-container {
   width: 65vw;
+  background-color: #554a4a33;
 }
 
 .form-top {
   height: 40vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  margin-left: 5%;
+  margin-bottom: 5px;
 }
 
 .form-middle {
