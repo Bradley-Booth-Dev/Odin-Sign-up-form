@@ -15,6 +15,7 @@
 body {
   margin: 0;
   padding: 0;
+  font-family: sans-serif;
 }
 
 .page-banner {
@@ -43,6 +44,11 @@ body {
 
 .form-middle {
   height: 30vh;
+}
+
+.form-main-div {
+  display: flex;
+  flex-direction: row;
 }
 
 .form-bottom {
