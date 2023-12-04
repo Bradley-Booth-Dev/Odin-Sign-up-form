@@ -49,6 +49,26 @@ body {
 .form-main-div {
   display: flex;
   flex-direction: row;
+  margin: 5%;
+}
+
+.form-div {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  margin-right: 100px;
+}
+
+input {
+  width: 200px;
+  height: 20px;
+  border-radius: 5px;
+  border: 2px solid #e5ebe8;
+}
+
+input:focus {
+  border: 2px solid #89cff0;
+  outline: none;
 }
 
 .form-bottom {
