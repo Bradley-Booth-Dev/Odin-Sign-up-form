@@ -8,9 +8,21 @@
   </head>
   <body>
     <div class="main-container">
-      <div class="page-banner">Odin</div>
+      <div class="page-banner">
+        <div class="for-image">
+          <div class="banner-container">
+            <img class="odin-img" src="images/odin-lined.png" alt="Odin Logo">
+            <h1>Odin</h1>
+          </div>
+        </div>
+        <div class="for-footer">
+          <p class="p-footer">
+            Photo by <a class="a-footer" href="">Halie West</a> on <a href="">Unsplash</a>
+          </p>
+        </div>
+      </div>
+      <!-- Top form -->
       <div class="form-container">
-        <!-- Top form -->
         <div class="form-top">
           <div class="top-text">
             <h2>
@@ -25,40 +37,56 @@
         </div>
         <!-- Middle form -->
         <div class="form-middle">
-          <h2 style="margin-left: 45px;">Let's do this!</h2>
+          <h2 class="middle-text">Let's do this!</h2>
           <form action="" method="get" class="form-main-div">
             <div class="form-divs">
               <div class="form-div">
                 <label for="">FIRST NAME:</label>
-                <input type="text" name="first_name" id="first_name" />
+                <input type="text" name="firstName" id="firstName" />
               </div>
               <div class="form-div">
                 <label for="">EMAIL:</label>
-                <input type="text" name="email" id="email" />
+                <input type="email" name="email" id="email" />
               </div>
               <div class="form-div">
                 <label for="">PASSWORD:</label>
-                <input type="password" name="password" id="password" />
+                <input type="password" name="password" id="password" required />
+                <p id="error"></p>
               </div>
             </div>
             <div class="form-divs">
               <div class="form-div">
                 <label for="">LAST NAME:</label>
-                <input type="text" name="last_name" id="last_name" />
+                <input type="text" name="lastName" id="lastName" />
               </div>
               <div class="form-div">
                 <label for="">PHONE NUMBER:</label>
-                <input type="tel" name="phone_number" id="phone_number" />
+                <input type="tel" name="phoneNumber" id="phoneNumber" />
               </div>
               <div class="form-div">
                 <label for="">CONFIRM PASSWORD:</label>
-                <input type="password" name="confirm_password" id="confirm_password" />
+                <input
+                  type="password"
+                  name="confirmPassword"
+                  id="confirmPassword"
+                  required
+                />
               </div>
-          </form>
+            </div>
+          
         </div>
         <!-- Bottom form -->
-        <div class="form-bottom">Form bottom</div>
+        <div class="form-bottom">
+          <button type="submit" class="btn-green">Create Account!</button>
+        </form>
+          <div class="bottom-text">
+            <h4 class="hyperlink">
+              Already have an account? <a class="login" href="your_login_page.html">Log in</a>
+            </h4>
+          </div>
+        </div>
       </div>
     </div>
+    <script src="main.js"></script>
   </body>
 </html>

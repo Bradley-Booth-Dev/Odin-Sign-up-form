@@ -16,6 +16,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  overflow: hidden;
 }
 
 .page-banner {
@@ -23,18 +24,18 @@ body {
   width: 35vw;
   background-repeat: no-repeat;
   background-size: cover;
-  font-family: NorseBold;
   color: rgb(240, 233, 233);
   font-size: 60px;
 }
 
 .form-container {
   width: 65vw;
-  background-color: #554a4a33;
+  background-color: #c5bbbb33;
 }
 
 .form-top {
-  height: 40vh;
+  font-size: 20px;
+  height: 32vh;
   display: flex;
   justify-content: flex-start;
   align-items: flex-end;
@@ -43,25 +44,35 @@ body {
 }
 
 .form-middle {
-  height: 30vh;
+  height: 32vh; /* Adjust the height as needed */
+  display: flex;
+  flex-direction: column;
+  background-color: whitesmoke;
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.middle-text {
+  margin-left: 5%;
+  font-size: 27px;
 }
 
 .form-main-div {
   display: flex;
+  font-weight: bold;
   flex-direction: row;
-  margin: 5%;
+  margin-left: 5%;
 }
 
 .form-div {
   display: flex;
   flex-direction: column;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   margin-right: 100px;
 }
 
 input {
-  width: 200px;
-  height: 20px;
+  width: 250px;
+  height: 30px;
   border-radius: 5px;
   border: 2px solid #e5ebe8;
 }
@@ -71,6 +82,86 @@ input:focus {
   outline: none;
 }
 
+input:invalid + #error {
+  color: red;
+  font-size: 15px;
+  margin: 0%;
+}
+
+input:invalid {
+  border: 2px solid red;
+}
+
+#error {
+  color: red;
+  font-size: 15px;
+  margin: 0%;
+}
+
+.btn-green {
+  background-color: #228b22;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 15px 40px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-green:hover {
+  background-color: #1a6e1f;
+}
+
 .form-bottom {
-  height: 30vh;
+  display: block;
+  flex-direction: column;
+  height: 32vh;
+  margin: 5%;
+}
+
+.login {
+  text-decoration: none;
+  font-weight: bold;
+  color: #228b22;
+}
+
+.a-footer {
+  color: white;
+}
+
+.p-footer {
+  font-size: 15px;
+}
+
+.for-image {
+  font-family: NorseBold;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.for-footer {
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.odin-img {
+  height: 150px;
+}
+
+.banner-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(12, 8, 8, 0.6);
+  width: 100%;
 }
